@@ -1,40 +1,38 @@
-# Dashboard Admin LMS Kursus Online | Bootstrap 5 Advanced Components
+# Kalkulator Sederhana | JavaScript Basics & DOM Manipulation
 
-Sebuah proyek halaman web _Dashboard Admin LMS (Learning Management System)_ interaktif dan responsif yang dikembangkan sebagai tugas praktikum **Modul 08: Bootstrap ke-03** pada mata kuliah **Workshop Desain Web**. Proyek ini mendemonstrasikan pengintegrasian komponen _user interface_ (UI) Bootstrap 5 tingkat lanjut seperti _Navigation Bar, Sidebar List Groups, Dropdown Components, Form Controls, Form Inputs,_ serta _Validation States_.
+Sebuah proyek halaman web _Kalkulator Sederhana_ interaktif yang dikembangkan sebagai tugas praktikum **Modul 09: JavaScript ke-01** pada mata kuliah **Workshop Desain Web**. Proyek ini mendemonstrasikan berbagai cara penyisipan skrip JavaScript (internal di `<head>`, internal di `<body>`, dan eksternal) serta teknik pengolahan masukan numerik, penanganan _events_, dan validasi pengondisian logika.
 
 ---
 
-## 🚀 Fitur Utama & Kriteria Bootstrap
+## 🚀 Fitur Utama & Kriteria JavaScript
 
-- **Navigation Bar Responsif:** Memuat _brand/logo_ PENS, menu utama (_Dashboard, Kursus, Siswa, Laporan, Pengaturan_), formulir pencarian cepat, _dropdown_ pengaturan cepat berisikan _form switch_, serta _dropdown_ profil admin[cite: 105].
-- **Sidebar dengan List Groups:** Pintasan menu navigasi samping (_Dashboard, Kursus Aktif, Tugas Siswa, Diskusi, Bantuan_) berikon yang dilengkapi lencana (_badge_) notifikasi interaktif[cite: 105].
-- **Dropdown Components Multi-fungsi:** Menyediakan _dropdown_ filter kategori data, _dropdown_ aksi per item pada tabel (_Lihat Detail, Edit, Hapus_), serta _dropdown_ formulir pengaturan cepat di _navbar_[cite: 105].
-- **Forms & Modal Interaktif:** Dilengkapi formulir modal untuk penambahan kursus baru serta pembaruan profil administrator[cite: 105].
-- **Variasi Form Inputs:** Menggunakan berbagai jenis masukan masif seperti _text input, email, select, textarea, file upload, range slider, checkbox, radio button,_ serta _input-group_ berikon[cite: 105].
-- **Validation States:** Mengimplementasikan indikator status validasi visual (`.is-valid` dan `.is-invalid`) beserta pesan umpan balik (`.valid-feedback` dan `.invalid-feedback`)[cite: 103, 105].
-- **Flexbox Sticky Footer:** Penerapan tata letak Flexbox kustom agar elemen _footer_ selalu berada di posisi paling bawah halaman secara presisi.
-- **Identitas Warna Kustom:** Mengintegrasikan skema warna identitas kampus khusus, yaitu `#023269` (Biru Utama) dan `#f3c907` (Kuning Emas) pada komponen Bootstrap.
+- **Struktur Penulisan Skrip Fleksibel:** Mendemonstrasikan pendeklarasian fungsi kalkulasi di dalam tag `<head>` (JavaScript Internal) serta penanganan _event listener_ tombol reset pada akhir `<body>` (DOM Manipulation).
+- **Operasi Aritmetika Lengkap:** Mendukung 4 operasi matematika dasar:
+  - Penjumlahan (`+`)
+  - Pengurangan (`-`)
+  - Perkalian (`×`)
+  - Pembagian (`÷`)
+- **Validasi Input & Pengondisian:** Memeriksa keabsahan bidang input agar tidak kosong serta menangani kondisi khusus eror pembagian dengan angka nol ($0$).
+- **Fungsi Reset Instant:** Menyeragamkan pembersihan seluruh bidang input dan hasil ke status awal dalam satu klik.
+- **Desain Modern & Identitas Warna Kampus:** Antarmuka responsif yang dikemas dalam bentuk kartu (_card_) berestetika bersih dengan paduan warna identitas kampus `#023269` (Biru Utama) dan `#f3c907` (Kuning Emas).
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
 
-- **HTML5** (Struktur Dokumen Semantik)
-- **CSS3** (Variabel Kustom, Flexbox Sticky Footer, & Styling Warna Kampus)
-- **Bootstrap 5** (Navbar, List Groups, Dropdowns, Forms, Inputs, Modals, Components CDN)[cite: 88, 90, 92, 95, 100]
-- **Bootstrap Icons** (Ikonografi Antarmuka)
-- **JavaScript ES6 / Bootstrap Bundle** (Interaktivitas Modal, Dropdown, & Toggle Navbar)[cite: 91, 94, 98, 103]
+- **HTML5** (Struktur Form & Input Fields)
+- **CSS3** (Flexbox Centering, Responsive Card Design, & Custom Color Variables)
+- **JavaScript ES6** (Functions, Event Listeners, Switch-Case Conditionals, DOM Manipulation)
 
 ---
 
-## 📂 Section Halaman yang Disediakan
+## 📂 Komponen Antarmuka yang Disediakan
 
-1. **Header & Navigation Bar:** Bilah navigasi terpadu dengan pencarian dan menu profil pengguna[cite: 105].
-2. **Sidebar Menu Cepat (List Groups):** Navigasi ringkas dengan indikator _badge_ notifikasi[cite: 105].
-3. **Manajemen Kursus Online (Table & Dropdown Actions):** Tabel data kursus interaktif dengan menu aksi melayang dan status validasi[cite: 105].
-4. **Form Modal Tambah Kursus:** Formulir pop-up komprehensif berisikan berbagai jenis _input controls_[cite: 105].
-5. **Form Modal Edit Profil:** Formulir cepat untuk memperbarui data identitas admin[cite: 105].
-6. **Footer:** Hak cipta dan rincian modul praktikum.
+1. **Header Kalkulator:** Judul proyek dan rincian modul praktikum.
+2. **Dua Field Input Angka:** Wadah untuk memasukkan nilai numerik pertama dan kedua.
+3. **Grid Tombol Operasi:** 4 tombol aksi cepat (`+`, `-`, `×`, `÷`) dengan efek transisi interaktif.
+4. **Tombol Reset:** Pintasan untuk membersihkan input dan nilai hasil secara instan.
+5. **Box Display Hasil:** Area penampil output hasil kalkulasi secara terstruktur.
 
 ---
 
@@ -42,7 +40,7 @@ Sebuah proyek halaman web _Dashboard Admin LMS (Learning Management System)_ int
 
 ### Tampilan
 
-![Tampilan PC](landing1.png)
+![Tampilan Kalkulator](image.png)
 
 ---
 
@@ -50,10 +48,10 @@ Sebuah proyek halaman web _Dashboard Admin LMS (Learning Management System)_ int
 
 **Marcellino Putra Kurniawan**
 
-- **NRP:** 3126510020[cite: 88]
-- **Program Studi:** D3 PJJ Teknik Informatika '26[cite: 88]
-- **Institusi:** Politeknik Elektronika Negeri Surabaya[cite: 88]
+- **NRP:** 3126510020
+- **Program Studi:** D3 PJJ Teknik Informatika '26
+- **Institusi:** Politeknik Elektronika Negeri Surabaya
 
 ---
 
-_Dibuat untuk memenuhi Tugas Praktikum 8 Workshop Desain Web (Semester 1)._[cite: 88]
+_Dibuat untuk memenuhi Tugas Praktikum 9 Workshop Desain Web (Semester 1)._
